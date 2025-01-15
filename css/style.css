@@ -1,0 +1,379 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.4s;
+
+}
+
+a:hover {
+    color: #F7BB18;
+}
+
+/* Navbar */
+#navbar {
+    padding: 0.5rem 2.5rem;
+    background-image: linear-gradient(to right top, #002349, #07233f, #102234, #172029, #1d1e1f);
+    border-bottom: 2px solid #37a1f7;
+}
+
+#navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#navbar-inner h2 {
+    color: #FFF;
+    text-shadow: #37a1f7 0.1rem 0.1rem 0.1rem;
+    font-size: 28px;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 18px;
+}
+
+/* banner */
+#main-banner {
+    width: 100%;
+    height: 400px;
+    background: url(../img/meioambiente.jpg) no-repeat center;
+    background-size: cover;
+    background-position: 0 40%;
+    border-bottom: 2px solid #37a1f7;
+}
+
+#text-banner h1 {
+    padding: 100px 50px;
+    color: #FFF;
+    font-size: 60px;
+    text-shadow: #002349 0.2rem 0.2rem 0.2rem;
+}
+
+/* Sobre e Cartilha */
+#container {
+    width: 100%;
+    background-image: linear-gradient(to right top, #002349, #07233f, #102234, #172029, #1d1e1f);
+}
+
+#titulo {
+    font-size: 45px;
+    text-align: justify;
+    color: #FFF;
+    padding: 20px 50px;
+    text-shadow: #37a1f7 0.1rem 0.1rem 0.2rem;
+}
+
+#paragrafo {
+    padding: 20px 50px;
+    text-align: justify;
+    font-size: 24px;
+    color: #FFF;
+    border-bottom: 2px solid rgb(55,161,247, 0.1);
+}
+
+.site {
+    color: #F7BB18;
+    font-style: italic;
+}
+
+.cartilha {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(55,161,247, 0.1);
+}
+
+.titulo-habito {
+    font-size: 24px;
+    color: #F7BB18;
+}
+
+.texto-habito {
+    padding: 20px 50px;
+    text-align: justify;
+    font-size: 22px;
+    color: #FFF;
+}
+
+.image {
+    padding: 20px 20px 30px 50px;
+    width: 300px;
+} 
+
+
+/* Rodapé */
+#rodape {
+    background-image: linear-gradient(to right bottom, #002349, #07233f, #102234, #172029, #1d1e1f);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-image: linear-gradient(to right bottom, #002349, #07233f, #102234, #172029, #1d1e1f);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 1px solid #F7BB18;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: #F7BB18;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+form input:focus {
+    border-radius: 15px;
+}
+
+form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+form textarea:focus {
+    border-radius: 15px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid #F7BB18;
+    border-radius: 10px;
+    color: #F7BB18;
+    transition: all 1s;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+form button:hover {
+    background: #FFF;
+    color: #0a243b;
+    border-radius: 15px;
+    border: none;
+}
+
+/* Responsividade */
+
+/* Pequenos laptops 1100px */
+
+@media (max-width: 1100px) {
+    .texto-habito {
+        font-size: 20px;
+    }
+}
+
+/* Tablets */
+
+@media (max-width: 900px) {
+    #text-banner h1 {
+        padding: 100px 50px;
+        color: #FFF;
+        font-size: 54px;
+        text-shadow: #002349 0.2rem 0.2rem 0.2rem;
+    }
+
+    #paragrafo {
+        padding: 20px 50px;
+        text-align: justify;
+        font-size: 20px;
+        color: #FFF;
+        border-bottom: 2px solid rgb(55, 161, 247, 0.1);
+    }
+
+    .cartilha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid rgb(55, 161, 247, 0.1);
+    }
+
+    .image {
+        padding: 20px 20px 20px 50px;
+        width: 500px;
+    }
+
+    .titulo-habito {
+        font-size: 22px;
+        color: #F7BB18;
+    }
+
+    .texto-habito {
+        padding: 20px 50px;
+        text-align: justify;
+        font-size: 18px;
+        color: #FFF;
+    }
+
+    #titulo {
+        font-size: 40px;
+        text-align: justify;
+        color: #FFF;
+        padding: 20px 50px;
+        text-shadow: #37a1f7 0.1rem 0.1rem 0.2rem;
+    }
+}
+
+/* Celular */
+
+@media (max-width: 576px) {
+    #navbar-inner h2 {
+        color: #FFF;
+        text-shadow: #37a1f7 0.1rem 0.1rem 0.1rem;
+        font-size: 16px;
+    }
+
+    #nav-links {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 14px;
+    }
+
+    #text-banner h1 {
+        padding: 100px 30px;
+        color: #FFF;
+        font-size: 38px;
+        text-shadow: #002349 0.2rem 0.2rem 0.2rem;
+    }
+
+    #main-banner {
+        width: 100%;
+        height: 400px;
+        background: url(../img/meioambiente.jpg) no-repeat center;
+        background-size: cover;
+        border-bottom: 2px solid #37a1f7;
+    }
+
+    #titulo {
+        font-size: 34px;
+        text-align: center;
+        color: #FFF;
+        padding: 20px 30px;
+        text-shadow: #37a1f7 0.1rem 0.1rem 0.2rem;
+    }
+
+    #paragrafo {
+        padding: 20px 30px;
+        text-align: justify;
+        font-size: 18px;
+        color: #FFF;
+        border-bottom: 2px solid rgb(55, 161, 247, 0.1);
+    }
+
+    .image {
+        padding: 20px 20px 20px 20px;
+        width: 300px;
+    }
+
+    .texto-habito {
+        padding: 20px 30px;
+        text-align: justify;
+        font-size: 18px;
+        color: #FFF;
+    }
+
+    .titulo-habito {
+        text-align: justify;
+        font-size: 19px;
+        color: #F7BB18;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 45px;
+        width: 300px;
+    }
+
+    form label {
+        color: #F7BB18;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    form input {
+        padding: 10px;
+        outline: none;
+        border: 0;
+        margin-bottom: 8px;
+        font-size: 15px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    form textarea {
+        padding: 5px;
+        outline: none;
+        border: 0;
+        font-size: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    form button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    form button:hover {
+        background: #FFF;
+        color: #0a243b;
+        border-radius: 15px;
+        border: none;
+    }
+}
