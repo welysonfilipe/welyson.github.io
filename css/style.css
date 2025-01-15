@@ -379,6 +379,12 @@ form button:hover {
 }
 
 @media (max-width: 390px) {
+    #navbar-inner h2 {
+        color: #FFF;
+        text-shadow: #37a1f7 0.1rem 0.1rem 0.1rem;
+        font-size: 15px;
+    }
+
     #paragrafo {
         padding: 20px 20px;
         text-align: justify;
@@ -388,7 +394,7 @@ form button:hover {
     }
 
     #titulo {
-        font-size: 32px;
+        font-size: 28px;
         text-align: center;
         color: #FFF;
         padding: 20px 30px;
