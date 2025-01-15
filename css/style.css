@@ -382,7 +382,7 @@ form button:hover {
     #navbar-inner h2 {
         color: #FFF;
         text-shadow: #37a1f7 0.1rem 0.1rem 0.1rem;
-        font-size: 14.5px;
+        font-size: 15px;
     }
 
     #paragrafo {
@@ -394,11 +394,17 @@ form button:hover {
     }
 
     #titulo {
-        font-size: 26px;
+        font-size: 24px;
         text-align: center;
         color: #FFF;
         padding: 20px 30px;
         text-shadow: #37a1f7 0.1rem 0.1rem 0.2rem;
+    }
+
+    .titulo-habito {
+        text-align: justify;
+        font-size: 17px;
+        color: #F7BB18;
     }
 
     .texto-habito {
